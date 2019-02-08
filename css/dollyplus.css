@@ -1,3 +1,274 @@
 body {
-  padding: 80px;
+  padding: 120px;
+}
+.container {
+  position: relative;
+  width: 1200px;
+  height: 625px;
+  margin: 0 auto;
+  border-radius: 0 0 625px 625px;
+}
+.path {
+  position: absolute;
+  bottom: 140px;
+  left: 140px;
+  width: 920px;
+  height: 920px;
+  background: #99E3E3;
+  border-radius: 50%;
+}
+.path2 {
+  position: absolute;
+  bottom: 170px;
+  left: 170px;
+  width: 860px;
+  height: 860px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.path3 {
+  position: absolute;
+  z-index: 4;
+  bottom: 550px;
+  left: 550px;
+  width: 100px;
+  height: 100px;
+  background: #222222;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px 0px white;
+}
+.path3 svg {
+  padding: 18px;
+  width: 64px;
+  height: 64px;
+}
+.path3 path {
+  fill: #ffffff;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-90deg);
+  }
+  30% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+.dollyplus {
+  width: 300px;
+  height: 50px;
+  transform-origin: 200% center;
+  position: relative;
+  transform: rotate(-90deg);
+  animation: rotate 16s ease infinite;
+}
+.dollyplus-shell {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 8px;
+  width: 284px;
+  height: 50px;
+  border-radius: 3px;
+  background: #444444;
+  text-align: center;
+}
+.dollyplus-shell:before, .dollyplus-shell:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 224px;
+  width: 16px;
+  height: 8px;
+  background: #333333;
+  border-radius: 3px;
+}
+.dollyplus-shell:after {
+  top: 38px;
+}
+.dollyplus-shell__battery-bracket {
+  position: absolute;
+  top: 9px;
+  left: 62px;
+  width: 46px;
+  height: 32px;
+  background: #333333;
+  border-radius: 3px;
+}
+.dollyplus-shell__handle {
+  position: absolute;
+  top: 21px;
+  left: 132px;
+  width: 36px;
+  height: 8px;
+  background: #333333;
+}
+.dollyplus-shell__handle::before, .dollyplus-shell__handle::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -10px;
+  width: 14px;
+  height: 10px;
+  border-radius: 4px 0 0 4px;
+  background: #222222;
+}
+.dollyplus-shell__handle::after {
+  left: auto;
+  right: -10px;
+  border-radius: 0 4px 4px 0;
+}
+.dollyplus-shell__tripod-slot {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #222222;
+}
+.dollyplus-shell__tripod-slot::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #333333;
+  border-radius: 8px;
+}
+.dollyplus-wheel::before, .dollyplus-wheel::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 1px;
+  left: 0;
+  width: 10px;
+  height: 48px;
+  border-radius: 5px;
+  background: #222222;
+}
+.dollyplus-wheel::after {
+  left: auto;
+  right: 0;
+}
+.dollyplus-wheel-leg {
+  position: absolute;
+  z-index: 1;
+  left: 234px;
+  width: 8px;
+  height: 110px;
+  background: #222222;
+}
+.dollyplus-wheel-leg--left {
+  bottom: 32px;
+  transform: rotate(-9deg);
+}
+.dollyplus-wheel-leg--right {
+  top: 32px;
+  transform: rotate(9deg);
+}
+.dollyplus-wheel-leg:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 14px;
+  background: #333333;
+}
+.dollyplus-wheel-leg--left:before {
+  top: 2px;
+  left: -3px;
+  border-radius: 0 0 0 4px;
+}
+.dollyplus-wheel-leg--right:before {
+  bottom: 2px;
+  left: -3px;
+  border-radius: 4px 0 0 0;
+}
+.dollyplus-wheel-leg__tripod-slot {
+  position: absolute;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  background: #222222;
+}
+.dollyplus-wheel-leg__tripod-slot::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background: #444444;
+  border-radius: 7px;
+}
+.dollyplus-wheel-leg--left .dollyplus-wheel-leg__tripod-slot {
+  top: -9px;
+  border-radius: 9px 4px 0 9px;
+}
+.dollyplus-wheel-leg--right .dollyplus-wheel-leg__tripod-slot {
+  top: auto;
+  bottom: -9px;
+  border-radius: 9px 0 4px 9px;
+}
+.dollyplus-edelkrone {
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  left: 217px;
+  line-height: 0;
+}
+.dollyplus-edelkrone img {
+  width: 56px;
+}
+.dollyplus-tripod-camera {
+  position: absolute;
+  z-index: 3;
+  top: -95px;
+  left: 22px;
+  line-height: 0;
+}
+.dollyplus-tripod-camera img {
+  width: 208px;
+}
+/* .dollyplus-laser {
+  position: absolute;
+  top: 22px;
+  left: 56px;
+  z-index: 3;
+  width: 490px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(20,187,186,0.7);
+  box-shadow: 0px 0px 10px 0px rgba(20,187,186,1);
+} */
+.dollyplus-laser {
+  position: absolute;
+  top: -25px;
+  left: 64px;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 532px 50px 0;
+  border-color: transparent rgba(20,187,186,0.4) transparent transparent;
+}
+.dollyplus-laser::before, .dollyplus-laser::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  width: 526px;
+  height: 4px;
+  background: rgba(20,187,186,0.4);
+  transform: rotate(5deg);
+  box-shadow: 0px 0px 20px 0px rgba(20,187,186,1);
+}
+.dollyplus-laser::after {
+  transform: rotate(-5deg);
+  top: -25px;
 }
