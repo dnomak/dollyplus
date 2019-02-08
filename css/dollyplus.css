@@ -14,8 +14,9 @@ body {
   left: 140px;
   width: 920px;
   height: 920px;
-  background: #99E3E3;
+  /* background: #f5f5f5; */
   border-radius: 50%;
+  background: #f5f5f5;
 }
 .path2 {
   position: absolute;
@@ -29,21 +30,34 @@ body {
 .path3 {
   position: absolute;
   z-index: 4;
-  bottom: 550px;
-  left: 550px;
-  width: 100px;
-  height: 100px;
-  background: #222222;
+  bottom: 500px;
+  left: 500px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background: #000000;
   border-radius: 50%;
-  box-shadow: 0px 0px 30px 0px white;
+  overflow: hidden;
+  /* box-shadow: 0px 0px 30px 0px white; */
 }
 .path3 svg {
-  padding: 18px;
-  width: 64px;
-  height: 64px;
+  padding-top: 50px;
+  width: 100px;
+  height: 100px;
 }
 .path3 path {
   fill: #ffffff;
+}
+.shadow {
+  position: absolute;
+  top: -40px;
+  left: 142px;
+  width: 28px;
+  height: 70px;
+  transform: rotate(3deg);
+  background-color: #f5f5f5;
+  background-image: linear-gradient(180deg, #f5f5f5 12%, #14bbba 50%, #f5f5f5 100%);  
+  animation: shadow 16s linear infinite;
 }
 @keyframes rotate {
   0% {
@@ -57,6 +71,24 @@ body {
   }
   100% {
     transform: rotate(-90deg);
+  }
+}
+@keyframes shadow {
+  0% {
+    transform: rotate(0deg);
+    top: -10px;
+  }
+  30% {
+    transform: rotate(3deg);
+    top: -40px;
+  }
+  75% {
+    transform: rotate(-6deg);
+    top: 40px;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: -10px;
   }
 }
 .dollyplus {
@@ -249,26 +281,28 @@ body {
 } */
 .dollyplus-laser {
   position: absolute;
-  top: -25px;
-  left: 64px;
+  top: -75px;
+  left: 150px;
   z-index: 3;
   width: 0;
   height: 0;
+  /* overflow: hidden; */
+  border-radius: 200px;
   border-style: solid;
-  border-width: 50px 532px 50px 0;
+  border-width: 100px 458px 100px 0;
   border-color: transparent rgba(20,187,186,0.4) transparent transparent;
 }
 .dollyplus-laser::before, .dollyplus-laser::after {
   content: "";
   position: absolute;
-  top: 21px;
-  width: 526px;
+  top: 46px;
+  width: 458px;
   height: 4px;
   background: rgba(20,187,186,0.4);
-  transform: rotate(5deg);
+  transform: rotate(12.3deg);
   box-shadow: 0px 0px 20px 0px rgba(20,187,186,1);
 }
 .dollyplus-laser::after {
-  transform: rotate(-5deg);
-  top: -25px;
+  transform: rotate(-12.3deg);
+  top: -50px;
 }
