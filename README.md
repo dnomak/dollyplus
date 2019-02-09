@@ -1,6 +1,4 @@
-# [DollyPLUS](https://codepen.io/dnomak/full/GzQYjx)
-
-CSS only DollyPLUS
+# [CSS only DollyPLUS](https://codepen.io/dnomak/full/GzQYjx)
 
  - [codepen.com](https://codepen.io/dnomak/full/GzQYjx)
  - [dribbble.com](https://dribbble.com/shots/5989124-edelkrone-DollyPLUS)
