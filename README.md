@@ -1,6 +1,6 @@
 # [DollyPLUS](https://codepen.io/dnomak/full/GzQYjx)
 
-Give me a @CodePen logo as a center point and I will revolve around it all day long!
+CSS only DollyPLUS
 
  - [codepen.com](https://codepen.io/dnomak/full/GzQYjx)
  - [dribbble.com](https://dribbble.com/shots/5989124-edelkrone-DollyPLUS)
